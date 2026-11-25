@@ -4,7 +4,7 @@ const pool = new Pool({
     host: 'localhost',
     port: 5432,
     user: 'postgres',
-    password: 'class',
+    password: process.env.PGPASSWORD,
     database: 'aerolinea_db'
 });
 
